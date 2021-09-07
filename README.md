@@ -1,5 +1,7 @@
+GitHub [appotry/drop-in](https://github.com/appotry/drop-in)
 ## Remote Development Environment
-`appotry/drop-in:latest`
+[`appotry/drop-in:latest`](https://hub.docker.com/r/bloodstar/drop-in)
+
 
 [![](http://i.imgur.com/RVTlBBO.png)](http://i.imgur.com/RVTlBBO.png)
 
