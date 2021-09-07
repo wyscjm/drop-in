@@ -30,8 +30,8 @@ RUN echo "http://nl.alpinelinux.org/alpine/edge/testing" \
     >> $UHOME/.vimrc~ \
     && sh /tmp/init-vim.sh
 
-RUN rc-update add sshd \
-    && rc-status \
+RUN rc-status && \
+    && rc-update add sshd \
     && touch /run/openrc/softlevel \
     && /etc/init.d/sshd start > /dev/null 2>&1 \
     && /etc/init.d/sshd stop > /dev/null 2>&1
