@@ -1,8 +1,8 @@
-GitHub [appotry/drop-in](https://github.com/appotry/drop-in)
 ## Remote Development Environment
-[`appotry/drop-in:latest`](https://hub.docker.com/r/bloodstar/drop-in)
+GitHub: [appotry/drop-in](https://github.com/appotry/drop-in)
+Docker Hub: [`appotry/drop-in:latest`](https://hub.docker.com/r/bloodstar/drop-in)
 
-
+Edit From: [JAremko/drop-in](https://github.com/JAremko/drop-in)
 [![](http://i.imgur.com/RVTlBBO.png)](http://i.imgur.com/RVTlBBO.png)
 
 #### [Based on the `bloodstar/vim:latest`](https://hub.docker.com/r/bloodstar/vim/)   
