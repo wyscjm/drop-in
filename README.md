@@ -1,9 +1,9 @@
 ## Remote Development Environment
-`jare/drop-in:latest`
+`appotry/drop-in:latest`
 
 [![](http://i.imgur.com/RVTlBBO.png)](http://i.imgur.com/RVTlBBO.png)
 
-#### [Based on the `jare/vim-bundle:latest`](https://hub.docker.com/r/jare/vim-bundle/)   
+#### [Based on the `bloodstar/vim:latest`](https://hub.docker.com/r/bloodstar/vim/)   
 [![](http://i.imgur.com/G6KybVM.png)](http://i.imgur.com/G6KybVM.png) 
 
 #### [Also you might want to look at Vim/Emacs hybrid `jare/spacemacs`](https://hub.docker.com/r/jare/spacemacs/)    [![](https://raw.githubusercontent.com/syl20bnr/spacemacs/master/doc/img/spacemacs-python.png)](https://raw.githubusercontent.com/syl20bnr/spacemacs/master/doc/img/spacemacs-python.png) 
