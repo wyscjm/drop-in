@@ -22,7 +22,7 @@ RUN echo "http://nl.alpinelinux.org/alpine/edge/testing" \
     openrc \
     openssh \
     tmux \
-    py2-pip \
+    py-pip \
     && git clone https://github.com/tmux-plugins/tmux-yank.git \
     $UHOME/.tmux/tmux-yank \
     && pip install powerline-status \
