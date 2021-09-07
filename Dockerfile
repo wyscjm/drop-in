@@ -33,10 +33,10 @@ RUN echo "http://nl.alpinelinux.org/alpine/edge/testing" \
 RUN rc-update add sshd \
     && echo "1" \
     && rc-status \
-    && touch /run/openrc/softlevel \
-    && echo "1" \
-    && /etc/init.d/sshd start > /dev/null 2>&1 \
-    && /etc/init.d/sshd stop > /dev/null 2>&1
+    && touch /run/openrc/softlevel
+    #&& echo "1" \
+    #&& /etc/init.d/sshd start > /dev/null 2>&1 \
+    #&& /etc/init.d/sshd stop > /dev/null 2>&1
 
 #              ssh   mosh
 EXPOSE 80 8080 62222 60001/udp
