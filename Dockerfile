@@ -1,6 +1,6 @@
-FROM jare/vim-bundle
+FROM bloodstar/vim
 
-MAINTAINER JAremko <w3techplaygound@gmail.com>
+MAINTAINER andy <andycrusoe@gmail.com>
 
 USER root
 
