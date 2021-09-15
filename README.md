@@ -31,7 +31,7 @@ Edit From: [JAremko/drop-in](https://github.com/JAremko/drop-in)
   -v ~/.ssh/pub_rsa:/etc/ssh_keys:ro \
   -v /etc/localtime:/etc/localtime:ro \
   -d -p 80:80 -p 8080:8080 -p 62222:62222 -p 60001:60001/udp \
-  --name drop-in jare/drop-in
+  --name drop-in bloodstar/drop-in
 ```
   *`-v /etc/localtime:/etc/localtime:ro` - makes tmux display local time*
 #### how to connect:  
@@ -64,7 +64,7 @@ docker run -v $('pwd'):/home/developer/workspace \
   -e "GEMAIL=<github email>" \
   -e "GNAME=<github name>" \
   -d -p 80:80 -p 8080:8080 -p 62222:62222 -p 60001:60001/udp \
-  --name drop-in jare/drop-in
+  --name drop-in bloodstar/drop-in
 echo 'Done!'
 ```
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
