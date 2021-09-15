@@ -1,3 +1,4 @@
+## Vim IDE 中文化集成开发环境
 ## Remote Development Environment
 GitHub: [appotry/drop-in](https://github.com/appotry/drop-in)
 Docker Hub: [`appotry/drop-in:latest`](https://hub.docker.com/r/bloodstar/drop-in)
@@ -12,19 +13,19 @@ Edit From: [JAremko/drop-in](https://github.com/JAremko/drop-in)
 
 #### What's inside:
   - [`Alpine Linux`](http://www.alpinelinux.org/)
-  - [`Vim`](http://www.vim.org/) + a ton of awesome plugins *see [`jare/vim-bundle:latest`](https://hub.docker.com/r/jare/vim-bundle/)*
-  - Good support of [`Golang`](https://golang.org/) development with [`jare/go-tools`](https://hub.docker.com/r/jare/go-tools/) container
+  - [`Vim`](http://www.vim.org/) + a ton of awesome plugins *see [`bloodstar/vim:latest`](https://hub.docker.com/r/bloodstar/vim/)*
+  - Good support of [`Golang`](https://golang.org/) development with [`bloodstar/go-tools`](https://hub.docker.com/r/bloodstar/go-tools/) container
   - [`tmux`](https://tmux.github.io/)
   - [`powerline`](https://powerline.readthedocs.io)
   - [`Mosh`](https://mosh.mit.edu/)
   - OpenSSH, Bash, OMF, Python, etc.
 
-*The Tmux prefix is `C-q` other than that both Tmux and Vim binding are mostly default  [**tmux.conf**](https://github.com/JAremko/drop-in/blob/master/tmux.conf), [**.vimrc**](https://github.com/JAremko/alpine-vim/blob/master/.vimrc)*  
+*The Tmux prefix is `C-q` other than that both Tmux and Vim binding are mostly default  [**tmux.conf**](https://github.com/appotry/drop-in/blob/master/tmux.conf), [**.vimrc**](https://github.com/appotry/alpine-vim/blob/master/.vimrc)*  
 *Make sure to use "Solarized Dark" compatible theme or color palette may look weird.*  
 #### how to start the daemon(and all containers)
 ```sh
   docker create -v '/usr/lib/go' --name go-tools \
-  'jare/go-tools' '/bin/true'
+  'bloodstar/go-tools' '/bin/true'
 
   docker run -v $('pwd'):/home/developer/workspace \
   --volumes-from go-tools \
@@ -53,7 +54,7 @@ dtc_id=$(docker ps -a -q --filter 'name=vim-go-tools')
 if [[ -z "${dtc_id}" ]]; then
  echo 'vim-go-tools container not found. Creating...'
  docker create -v '/usr/lib/go' --name 'vim-go-tools' \
-   'jare/go-tools' '/bin/true'
+   'bloodstar/go-tools' '/bin/true'
  echo 'Done!'
 fi
 echo 'starting daemon...'
