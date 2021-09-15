@@ -1,4 +1,5 @@
 ## Vim IDE 中文化集成开发环境
+> 集成中文字体，中文locale环境
 ## Remote Development Environment
 GitHub: [appotry/drop-in](https://github.com/appotry/drop-in)
 Docker Hub: [`appotry/drop-in:latest`](https://hub.docker.com/r/bloodstar/drop-in)
