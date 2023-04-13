@@ -1,8 +1,9 @@
 ## Vim IDE 中文化集成开发环境
 > 集成中文字体，中文locale环境
 ## Remote Development Environment
-GitHub: [appotry/drop-in](https://github.com/appotry/drop-in)
-Docker Hub: [`appotry/drop-in:latest`](https://hub.docker.com/r/bloodstar/drop-in)
+- GitHub: [appotry/drop-in](https://github.com/appotry/drop-in)
+- Docker Hub: [`appotry/drop-in:latest`](https://hub.docker.com/r/bloodstar/drop-in)
+- 个人博客：<a title="My Blog Site" target="_blank" href="https://blog.17lai.site/"><img src="https://img.shields.io/badge/%E5%A4%9C%E6%B3%95%E4%B9%8B%E4%B9%A6%E5%8D%9A%E5%AE%A2%20(blog)-blog.17lai.site-orange" /></a>
 
 Edit From: [JAremko/drop-in](https://github.com/JAremko/drop-in)
 [![](http://i.imgur.com/RVTlBBO.png)](http://i.imgur.com/RVTlBBO.png)
