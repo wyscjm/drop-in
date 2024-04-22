@@ -1,4 +1,4 @@
 #!/bin/bash
-mkdir -p $HOME/.vim_runtime/temp_dirs
-cd $HOME
+mkdir -p $UHOME/.vim_runtime/temp_dirs
+cd $UHOME
 cat .vimrc~ >> .vimrc

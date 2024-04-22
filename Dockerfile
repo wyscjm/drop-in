@@ -4,10 +4,18 @@ MAINTAINER andy <andycrusoe@gmail.com>
 
 USER root
 
+# User config
+ENV UID="1000" \
+    UNAME="developer" \
+    GID="1000" \
+    GNAME="developer" \
+    SHELL="/bin/bash" \
+    UHOME=/home/developer
+
 RUN mkdir -p /etc/ssh/
 COPY sshd_config /etc/ssh/sshd_config
 COPY init-vim.sh /tmp/init-vim.sh
-COPY tmux.conf $HOME/.tmux.conf
+COPY tmux.conf $UHOME/.tmux.conf
 
 RUN echo "http://nl.alpinelinux.org/alpine/edge/testing" \
     >> /etc/apk/repositories \
@@ -25,21 +33,21 @@ RUN echo "http://nl.alpinelinux.org/alpine/edge/testing" \
     tmux \
     py-pip \
     && git clone https://github.com/tmux-plugins/tmux-yank.git \
-    $HOME/.tmux/tmux-yank 
+    $UHOME/.tmux/tmux-yank 
 
 RUN python -m venv venv \
     && source venv/bin/activate \
     && venv/bin/pip install pip -U \
     && venv/bin/pip install powerline-status \
     && echo "set shell=/bin/bash" \
-    >> $HOME/.vimrc~ \
+    >> $UHOME/.vimrc~ \
     && sh /tmp/init-vim.sh
 
-RUN python -m venv $HOME/venv \
-    && source $HOME/venv/bin/activate \
-    && $HOME/venv/bin/pip install pip -U \
-    && $HOME/venv/bin/pip install powerline-status \
-    && echo "set shell=/bin/bash" >> $HOME/.vimrc~ \
+RUN python -m venv $UHOME/venv \
+    && source $UHOME/venv/bin/activate \
+    && $UHOME/venv/bin/pip install pip -U \
+    && $UHOME/venv/bin/pip install powerline-status \
+    && echo "set shell=/bin/bash" >> $UHOME/.vimrc~ \
     && sh /tmp/init-vim.sh
 
 RUN rc-update add sshd \
