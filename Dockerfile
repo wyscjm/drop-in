@@ -1,6 +1,6 @@
 FROM bloodstar/vim
 
-MAINTAINER andy <andycrusoe@gmail.com>
+MAINTAINER appotry <andycrusoe@gmail.com>
 
 USER root
 
